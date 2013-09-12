@@ -1,0 +1,56 @@
+<%= form_for @commission, url: calculate_path do |f| %>
+  <% if @commission.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@commission.errors.count, "error") %> prohibited this commission from being saved:</h2>
+
+      <ul>
+      <% @commission.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+  <div class="form">
+
+      <div class="field">
+        Your Point
+        <%= f.text_field :point, class: 'form-control' %>
+      </div>
+    
+      <div class="field">
+        People in Team A
+        <%= f.text_field :friends_a, class: 'form-control' %>
+      </div>
+    
+      <div class="field">
+        People in Team B
+        <%= f.text_field :friends_b, class: 'form-control' %>
+      </div>
+    
+      <div class="field">
+        Your Friend introduce at least # each
+        <%= f.text_field :num_of_fof, class: 'form-control' %>
+      </div>
+    
+      <div class="field">
+        Your Friend of Friend introduce at least # each
+        <%= f.text_field :fof, class: 'form-control' %>
+      </div>
+    
+      <div class="field">
+        How many people in Challenge Team
+        <%= f.text_field :ct_people, class: 'form-control' %>
+      </div>
+    
+      <div class="field">
+        Your Challenge Team point
+        <%= f.text_field :ct_amount, class: 'form-control' %>
+      </div>
+      <br>
+      <div class="actions">
+        <%= f.submit 'Calculate', class: 'btn btn-primary' %>
+      </div>
+  
+  </div>
+<% end %>

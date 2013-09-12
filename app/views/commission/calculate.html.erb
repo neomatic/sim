@@ -1,0 +1,36 @@
+<div class="form">
+    <table class="table">
+        <thead>
+          <tr>
+            <th>Order</th>
+            <th>Benefit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Friend Bonus</td>
+            <td><%= number_with_precision(@friend_bonus, precision: 2) %> (<%= number_with_precision((@friend_bonus * 32), precision: 2)  %>) Baht</td>
+          </tr>
+          <tr>
+            <td>Weak team Bonus</td>
+            <td><%= number_with_precision(@weak_team_bonus, precision: 2) %> (<%= number_with_precision((@weak_team_bonus * 32), precision: 2) %>) Baht</td>
+          </tr>
+          <tr>
+            <td>Friend weak Bonus</td>
+            <td><%= number_with_precision(@friend_weak_bonus, precision: 2) %> (<%= number_with_precision((@friend_weak_bonus * 32), precision: 2) %>) Baht</td>
+          </tr>
+          <tr>
+            <td>FoF Bonus</td>
+            <td><%= number_with_precision(@fof_bonus, precision: 2) %> (<%= number_with_precision((@fof_bonus * 32), precision: 2) %>) Baht</td>
+          </tr>
+          <tr>
+            <td>CT Bonus</td>
+            <td><%= number_with_precision(@ct_bonus, precision: 2) %> (<%= number_with_precision((@ct_bonus * 32), precision: 2) %>) Baht</td>
+          </tr>
+          <tr>
+            <td><b>Total</b></td>
+            <td><b><%= number_with_precision(@total, precision: 2) %> (<%= number_with_precision((@total * 32), precision: 2) %>) Baht</b></td>
+          </tr>
+        </tbody>
+    </table>
+</div>

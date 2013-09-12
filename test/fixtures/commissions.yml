@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  point: 1
+  friends_a: 1
+  friends_b: 1
+  weak_team: 
+  num_of_fof: 
+  friends_weak: 
+  fof: 
+  ct_people: 
+  ct_amount: 1
+
+two:
+  point: 1
+  friends_a: 1
+  friends_b: 1
+  weak_team: 
+  num_of_fof: 
+  friends_weak: 
+  fof: 
+  ct_people: 
+  ct_amount: 1
